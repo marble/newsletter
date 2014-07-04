@@ -1,0 +1,30 @@
+# This is the project specific Settings.yml file.
+# Place Sphinx specific build information here.
+# Settings given here will replace the settings of 'conf.py'.
+
+---
+conf.py:
+  copyright: 2014
+  project: Newsletter
+  version: 2.1
+  release: 2.1.1
+  latex_documents:
+  - - Index
+    - newsletter.tex
+    - Newsletter
+    - Ecodev
+    - manual
+  latex_elements:
+    papersize: a4paper
+    pointsize: 10pt
+    preamble: \usepackage{typo3}
+  intersphinx_mapping:
+    t3scheduler:
+    - http://docs.typo3.org/typo3cms/extensions/scheduler/
+    - null
+    t3cmsapi:
+    - http://typo3.org/api/typo3cms/
+    - null
+  intersphinx_mapping_EXAMPLE: {}
+  
+...
